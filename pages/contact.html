@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="..//css/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+
+        <nav class="header__bar">
+            <a href="../index.html"><img src="../assets/logo/ACAP.png" class="logo" alt="Imagen-Header"></a>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="./app.html">APP</a></li>
+                <li><a href="./workshops.html">WORKSHOPS</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+            <div class="header__burguer-menu"> MENU
+                <!-- <input class="header__bar__btn" type="button" value="Menu"> -->
+                <ul class="header__burguer-submenu">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="./app.html">APP</a></li>
+                    <li><a href="./workshops.html">WORKSHOPS</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form action="" method="get" enctype="text/plain" class="contactForm">
+            <fieldset>
+                <legend>CONTACT US</legend>
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <div>
+                        <label for="userNameSur">Name & Surname</label><br>
+                        <input type="text" name="userNameSur" id="userNameSur" required>
+                    </div>
+                    <div>
+                        <label for="userMail">E-Mail</label><br>
+                        <input type="email" name="userMail" id="userMail" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Message</legend>
+                    <div>
+                        <label for="userMessage">Body</label><br>
+                        <textarea type="email" name="userMessage" id="userMessage" cols="45" rows="10"
+                            required></textarea><br>
+                        <input class="form__button" type="submit" value="SEND MESSAGE">
+                        <input class="form__button" type="reset" value="RESET">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Dev Info</legend>
+                    <div>
+                        <label>Dev: <b>Nicolás Javier SCARAFIA</b></label><br>
+                        <label>Phone Number: <b>XXX-XXX XXXX</b></label><br>
+                        <label>E-Mail: <b>xxxxx@gmail.com</b></label><br>
+                    </div>
+                </fieldset>
+            </fieldset>
+        </form>
+    </main>
+    <footer class="footer">
+        <nav class="footerNav">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="./app.html">APP</a></li>
+                <li><a href="./workshops.html">WORKSHOPS</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
