@@ -29,6 +29,7 @@ body {
     top: 0;
     font-family: 'Bungee', cursive;
     color: #c7f416;
+    z-index: 1;
 }
 
 .header ul {
@@ -61,7 +62,7 @@ body {
 /* MAIN  */
 main {
     display: grid;
-    place-items: center;
+    /* place-items: center; */
     padding-top: 60px;
     background-image: url('../assets/img/empty\ background2.png');
     background-repeat: no-repeat;
@@ -128,6 +129,12 @@ a {
 
 }
 
+.main__content {
+    padding-top: 10vh;
+    padding-left: 15vh;
+    padding-right: 15vh;
+}
+
 /* FOOTER */
 
 .footerNav {
@@ -167,6 +174,8 @@ a {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
+    padding-left: 15vw;
+    padding-right: 15vw;
 
 }
 
@@ -240,9 +249,38 @@ form fieldset fieldset {
 /* Application */
 
 .app_view {
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: flex;
     color: aliceblue;
     flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* .app_view img {
+    width: 50rem;
+} */
+
+.img-bx {
+    padding: 30px;
+    overflow: hidden;
+}
+
+/* .img-bx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+} */
+
+.bg-dark {
+    background-color: #323746;
+}
+
+.waves {
+    margin-bottom: -4px;
 }
 
 
@@ -292,10 +330,18 @@ form fieldset fieldset {
         border-color: #c7f416;
     }
 
+    .main__content {
+        padding: 2vw 4vh;
+    }
+
     /* MEDIA APP */
 
     .app_view {
         flex-direction: column;
+    }
+
+    .bg-dark {
+        flex-direction: column-reverse;
     }
 
     /* MEDIA BLOG */
@@ -340,6 +386,10 @@ form fieldset fieldset {
 
     .app_view {
         flex-direction: column;
+    }
+
+    .bg-dark {
+        flex-direction: column-reverse;
     }
 
     /* MEDIA BLOG */
