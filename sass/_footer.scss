@@ -1,0 +1,44 @@
+/* FOOTER */
+
+.footer {
+
+
+    .footerNav {
+        background: linear-gradient(to bottom right, rgb(50, 55, 70), rgb(2, 3, 12));
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Bungee', cursive;
+        color: #c7f416;
+        padding-left: 0;
+
+        li {
+            margin-left: 1rem;
+
+            a {
+                text-decoration: none;
+
+            }
+        }
+
+    }
+
+
+    li {
+        transition: trasnform 3s;
+    }
+
+    li:hover {
+        transform: scale(1.2);
+    }
+
+
+}

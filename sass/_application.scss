@@ -1,0 +1,65 @@
+/* Application */
+
+.app_view {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    color: aliceblue;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+    .img-bx {
+        padding: 30px;
+        overflow: hidden;
+    }
+
+
+
+}
+
+
+.bckg-dark {
+    background-color: #323746;
+}
+
+
+
+.waves {
+    margin-bottom: -4px;
+}
+
+/* MEDIA APP */
+
+
+@media screen and (max-width: 720px) {
+
+
+    .app_view {
+        flex-direction: column;
+    }
+
+    .bg-dark {
+        flex-direction: column-reverse;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+
+
+    .app_view {
+        flex-direction: column;
+    }
+
+    .bckg-dark {
+        flex-direction: column-reverse;
+    }
+
+
+}
