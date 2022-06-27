@@ -2,13 +2,10 @@
 
 .footer {
 
+    background: linear-gradient(to bottom right, rgb(50, 55, 70), rgb(2, 3, 12));
+    margin-bottom: 0%;
 
-    .footerNav {
-        background: linear-gradient(to bottom right, rgb(50, 55, 70), rgb(2, 3, 12));
-        padding-top: 20px;
-        padding-bottom: 20px;
-        width: 100%;
-    }
+
 
 
     ul {
@@ -17,7 +14,7 @@
         justify-content: center;
         text-align: center;
         font-family: 'Bungee', cursive;
-        color: #c7f416;
+        color: map-get($colors , greenACAP);
         padding-left: 0;
 
         li {
@@ -41,4 +38,10 @@
     }
 
 
+}
+
+.footerNav {
+    @extend .footer;
+    @include padding-updown(20px, 20px);
+    width: 100%;
 }

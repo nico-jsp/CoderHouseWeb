@@ -1,6 +1,4 @@
 .contactForm {
-    // padding-top: 30px;
-    // padding-bottom: 30px;
     text-align: center;
     padding-left: 15vw;
     padding-right: 15vw;
@@ -13,7 +11,6 @@ fieldset {
     margin: auto;
     border-radius: 5px;
     font-family: 'Bungee', cursive;
-    color: #c7f416;
     color: aliceblue;
 
     fieldset {
@@ -37,8 +34,8 @@ fieldset {
 
     .contactForm {
         text-align: left;
-        padding-left: 5vh;
-        padding-right: 5vh;
+        @include padding-sides(5vh, 5vh);
+
 
         fieldset {
             padding: 0px;

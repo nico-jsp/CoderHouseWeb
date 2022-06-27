@@ -1,8 +1,7 @@
 /* Application */
 
 .app_view {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    @include padding-updown(15px, 15px);
     display: flex;
     color: aliceblue;
     flex-direction: row;

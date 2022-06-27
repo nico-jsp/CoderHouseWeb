@@ -9,8 +9,8 @@
 .blog {
 
     justify-content: space-around;
-    padding-left: 10px;
-    padding-right: 10px;
+    @include padding-sides(10px, 10px);
+
 }
 
 /* MEDIA BLOG */

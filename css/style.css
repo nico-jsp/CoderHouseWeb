@@ -23,7 +23,7 @@ main {
   background-size: cover;
   background-attachment: fixed;
   padding-bottom: 30px; }
-  main h3 {
+  main h1, main h3 {
     margin-top: 10px;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -32,6 +32,9 @@ main {
     font-weight: 600;
     color: #c7f416;
     text-align: center; }
+  main h3 {
+    font-size: 2rem;
+    font-weight: 300; }
   main img {
     display: block;
     margin: auto;
@@ -113,7 +116,6 @@ fieldset {
   margin: auto;
   border-radius: 5px;
   font-family: 'Bungee', cursive;
-  color: #c7f416;
   color: aliceblue; }
   fieldset fieldset {
     border-radius: 5px;
@@ -142,30 +144,30 @@ fieldset {
         text-align: left; } }
 
 /* FOOTER */
-.footer .footerNav {
+.footer, .footerNav {
   background: linear-gradient(to bottom right, #323746, #02030c);
+  margin-bottom: 0%; }
+  .footer ul, .footerNav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Bungee', cursive;
+    color: #c7f416;
+    padding-left: 0; }
+    .footer ul li, .footerNav ul li {
+      margin-left: 1rem; }
+      .footer ul li a, .footerNav ul li a {
+        text-decoration: none; }
+  .footer li, .footerNav li {
+    transition: trasnform 3s; }
+  .footer li:hover, .footerNav li:hover {
+    transform: scale(1.2); }
+
+.footerNav {
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%; }
-
-.footer ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-family: 'Bungee', cursive;
-  color: #c7f416;
-  padding-left: 0; }
-  .footer ul li {
-    margin-left: 1rem; }
-    .footer ul li a {
-      text-decoration: none; }
-
-.footer li {
-  transition: trasnform 3s; }
-
-.footer li:hover {
-  transform: scale(1.2); }
 
 /* CONTENEDOR */
 .contenedor__blogs {
