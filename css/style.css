@@ -211,9 +211,15 @@ fieldset {
   margin-bottom: -4px; }
 
 /* MEDIA APP */
+@media screen and (max-width: 940px) {
+  .app_view {
+    flex-direction: column-reverse; }
+  .bg-dark {
+    flex-direction: column-reverse; } }
+
 @media screen and (max-width: 720px) {
   .app_view {
-    flex-direction: column; }
+    flex-direction: column-reverse; }
   .bg-dark {
     flex-direction: column-reverse; } }
 
