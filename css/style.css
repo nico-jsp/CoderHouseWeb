@@ -208,6 +208,7 @@ fieldset {
   background-color: #323746; }
 
 .waves {
+  margin-top: -4px;
   margin-bottom: -4px; }
 
 /* MEDIA APP */
