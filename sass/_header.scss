@@ -16,7 +16,7 @@
 
     &__custom ul {
         font-family: 'Bungee', cursive;
-        color: #c7f416;
+        color: map-get($colors , greenACAP);
     }
 
     &__custom li {
