@@ -180,6 +180,18 @@ fieldset {
   justify-content: space-around;
   padding-left: 10px;
   padding-right: 10px; }
+  .blog__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center; }
+  .blog__img {
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 15rem;
+    width: 25rem; }
 
 /* MEDIA BLOG */
 @media screen and (max-width: 720px) {

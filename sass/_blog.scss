@@ -11,6 +11,23 @@
     justify-content: space-around;
     @include padding-sides(10px, 10px);
 
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    &__img {
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        height: 15rem;
+        width: 25rem;
+
+    }
+
 }
 
 /* MEDIA BLOG */
