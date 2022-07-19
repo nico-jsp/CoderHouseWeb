@@ -17,6 +17,12 @@
         justify-content: center;
         align-content: center;
         align-items: center;
+
+        p {
+            font-size: 1rem;
+            @include padding-sides(5rem, 5rem);
+        }
+
     }
 
     &__img {
@@ -36,7 +42,24 @@
 
     .contenedor__blogs {
         grid-template-columns: 1fr;
+        padding: 0px;
     }
+
+    .blog {
+
+        justify-content: space-around;
+        @include padding-sides(10px, 10px);
+
+        &__box {
+
+            p {
+                font-size: 1rem;
+                @include padding-sides(0rem, 0rem);
+            }
+
+        }
+    }
+
 
 }
 
@@ -44,5 +67,15 @@
 
     .contenedor__blogs {
         grid-template-columns: 1fr;
+        padding: 0px;
+
+    }
+
+    .blog__img {
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        height: 15rem;
+        width: 20rem;
     }
 }

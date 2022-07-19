@@ -4,9 +4,6 @@
 
     &__cover {
         display: flex;
-        // justify-content: center;
-        // justify-items: center;
-        // background-image: url('../assets/img/cutted\ viaje-costa-argentina.jpeg');
         background-size: cover;
         background-position: center;
         background-position-y: -100px;
@@ -57,42 +54,16 @@
 }
 
 
-
-
-// .contenedor__blogs {
-//     display: grid;
-//     grid-template-columns: repeat(2, 1fr);
-//     padding: 50px 25px;
-//     column-gap: 1rem;
-// }
-
-// .blog {
-
-//     justify-content: space-around;
-//     @include padding-sides(10px, 10px);
-
-//     &__box {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         align-content: center;
-//         align-items: center;
-//     }
-
-//     &__img {
-//         background-repeat: no-repeat;
-//         background-position: bottom;
-//         background-size: cover;
-//         height: 15rem;
-//         width: 25rem;
-
-//     }
-
-// }
-
 /* MEDIA BLOG */
 
 @media screen and (max-width: 720px) {
+
+    &__cover {
+        display: flex;
+        background-size: contain;
+        background-position-y: 75px;
+
+    }
 
     .blogs {
         h1 {
@@ -114,6 +85,12 @@
 }
 
 @media screen and (max-width: 480px) {
+
+    &__cover {
+        display: flex;
+        background-size: contain;
+        background-position-y: 75px;
+    }
 
     .blogs {
         h1 {

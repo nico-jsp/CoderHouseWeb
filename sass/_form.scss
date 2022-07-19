@@ -33,7 +33,7 @@ fieldset {
 
     .contactForm {
         text-align: left;
-        @include padding-sides(5vh, 5vh);
+        @include padding-sides(1rem, 1rem);
 
 
         fieldset {

@@ -16,6 +16,21 @@ body {
 }
 
 /* MAIN  */
+
+.main__cover {
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -100px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    // opacity: 100%;
+
+    height: 70vh;
+    min-height: 30vh;
+
+}
+
 .general_body {
     display: grid;
     /* padding-top: 60px; */
@@ -31,7 +46,7 @@ body {
         margin-top: 10px;
         margin-bottom: 10px;
         text-transform: uppercase;
-        font-size: 3rem;
+        font-size: 4rem;
         font-family: 'Raleway', sans-serif;
         font-weight: 600;
         color: map-get($colors , greenACAP);
@@ -49,7 +64,9 @@ body {
     img {
 
         display: block;
-        margin: auto;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 0px;
         width: 25rem;
         border-color: map-get($colors , greenACAP);
 
@@ -58,7 +75,7 @@ body {
     p {
         margin-top: 10px;
         margin-bottom: 10px;
-        font-size: 1rem;
+        font-size: 2.5rem;
         font-family: 'Raleway', sans-serif;
         font-weight: 300;
         color: aliceblue;
@@ -71,10 +88,10 @@ body {
 
     }
 
-    &__content {
+    .main__content {
         /* padding-top: 10vh; */
-        padding-left: 15vh;
-        padding-right: 15vh;
+        padding-left: 20vh;
+        padding-right: 20vh;
     }
 
 }
@@ -98,20 +115,189 @@ body {
 
 }
 
+@media screen and (max-width: 1024px) {
+
+
+    .main__cover {
+        display: flex;
+        background-size: contain;
+        background-position: center;
+        background-position-y: -100px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: 40vh;
+        min-height: 30vh;
+    }
+
+    .general_body {
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+
+        }
+
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            color: aliceblue;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            width: 20rem;
+            border-color: #c7f416;
+        }
+
+        main img {
+            display: block;
+            margin: auto;
+            width: 15rem;
+            border-color: map-get($colors , greenACAP);
+        }
+
+        .main__content {
+            padding-left: 1vh;
+            padding-right: 1vh;
+        }
+
+
+    }
+
+
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .main__cover {
+        display: flex;
+        background-size: contain;
+        background-position-y: 0px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: 35vh;
+        min-height: 30vh;
+    }
+
+    .general_body {
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+
+        }
+
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            color: aliceblue;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            width: 20rem;
+            border-color: #c7f416;
+        }
+
+        main img {
+            display: block;
+            margin: auto;
+            width: 15rem;
+            border-color: map-get($colors , greenACAP);
+        }
+
+        .main__content {
+            padding-left: 1vh;
+            padding-right: 1vh;
+        }
+
+
+    }
+
+
+
+
+
+}
+
 @media screen and (max-width: 480px) {
 
 
-
-    main img {
-        display: block;
-        margin: auto;
-        width: 15rem;
-        border-color: map-get($colors , greenACAP);
+    .main__cover {
+        display: flex;
+        background-size: contain;
+        background-position-y: 10px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: 15vh;
+        min-height: 15vh;
     }
 
-    .main__content {
-        padding-left: 2vh;
-        padding-right: 2vh;
+    .general_body {
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+
+        }
+
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            color: aliceblue;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            width: 20rem;
+            border-color: #c7f416;
+        }
+
+        main img {
+            display: block;
+            margin: auto;
+            width: 15rem;
+            border-color: map-get($colors , greenACAP);
+        }
+
+        .main__content {
+            padding-left: 1vh;
+            padding-right: 1vh;
+        }
+
+
     }
+
+
+
+
 
 }
